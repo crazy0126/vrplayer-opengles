@@ -1,0 +1,59 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
+	package
+		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:3:11-43
+		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:5:11-36
+		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:4:11-34
+		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:5-43
+INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:5-43
+INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:5-43
+INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:5-43
+INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:5-43
+	android:targetSdkVersion
+		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:5-43
+		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:15-41
+		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+application
+ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:8:5-19:19
+	android:label
+		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:9:9-41
+	android:icon
+		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:10:9-45
+activity#com.stone.player.vrlib.SurfaceActivity
+ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:11:9-18:20
+	android:label
+		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:13:13-45
+	android:name
+		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:12:13-66
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:14:13-17:29
+action#android.intent.action.MAIN
+ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:15:17-68
+	android:name
+		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:15:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:16:17-76
+	android:name
+		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:16:27-74
