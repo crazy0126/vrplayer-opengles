@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\android_prjs\\androidvrplayerdemo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\Mine\\codes\\vrplayer-opengles\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "D:\\android_prjs\\androidvrplayerdemo\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "D:\\Mine\\codes\\vrplayer-opengles\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

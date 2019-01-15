@@ -1,59 +1,75 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
-INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
-INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
-INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
-INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
-INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
-INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:1-20:12
+ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
-		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:3:11-43
-		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
-		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:3:11-43
+		INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:5:11-36
-		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
-		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:5:11-36
+		INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:4:11-34
-		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
-		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:4:11-34
+		INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET 
+ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:6:5-84
+	android:name
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:6:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:7:5-99
+	android:name
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:9:5-92
+	android:name
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:9:22-73
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:10:5-97
+	android:name
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:10:22-78
 uses-sdk
-ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:5-43
-INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:5-43
-INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:5-43
-INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:5-43
-INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:5-43
+ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:13:5-43
+INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:13:5-43
+INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:13:5-43
+INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:13:5-43
+INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:13:5-43
 	android:targetSdkVersion
-		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
-		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:5-43
-		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:13:5-43
+		INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:7:15-41
-		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
-		INJECTED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:13:15-41
+		INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:8:5-19:19
+ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:14:5-25:19
 	android:label
-		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:15:9-41
 	android:icon
-		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:10:9-45
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:16:9-45
 activity#com.stone.player.vrlib.SurfaceActivity
-ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:11:9-18:20
+ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:17:9-24:20
 	android:label
-		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:13:13-45
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:19:13-45
 	android:name
-		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:12:13-66
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:18:13-66
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:14:13-17:29
+ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:20:13-23:29
 action#android.intent.action.MAIN
-ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:15:17-68
+ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:21:17-68
 	android:name
-		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:16:17-76
+ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:22:17-76
 	android:name
-		ADDED from D:\android_prjs\androidvrplayerdemo\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from D:\Mine\codes\vrplayer-opengles\app\src\main\AndroidManifest.xml:22:27-74

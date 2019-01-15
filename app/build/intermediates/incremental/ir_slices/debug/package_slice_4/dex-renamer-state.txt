@@ -1,0 +1,4 @@
+#Mon Jan 14 19:16:16 CST 2019
+base.0=D\:\\Mine\\codes\\vrplayer-opengles\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+path.0=classes.dex
+renamed.0=classes.dex
