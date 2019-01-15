@@ -106,7 +106,7 @@ public class SurfaceActivity extends Activity implements TextureView.SurfaceText
     {
         Log.i(TAG, "onSurfaceTextureSizeChanged: " + " width: " + width +" height: "+ height);
         //To change body of implemented methods use File | Settings | File Templates.
-        renderer.setVideoSize(width,height);
+        renderer.setSurfaceSize(width,height);
     }
 
     @Override

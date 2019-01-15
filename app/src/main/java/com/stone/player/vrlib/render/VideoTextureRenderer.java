@@ -7,13 +7,13 @@ import android.opengl.GLES11Ext;
 import android.opengl.GLES20;
 import android.opengl.GLUtils;
 import android.util.Log;
-
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
 
 import com.stone.player.vrlib.constant.GravityMode;
+
 
 public class VideoTextureRenderer extends TextureBaseRenderer implements SurfaceTexture.OnFrameAvailableListener
 {
@@ -77,6 +77,7 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
     private GravityMode gravity = GravityMode.GRAVITY_RESIZE_ASPECT;
     private boolean gravityChanged = true;
     private boolean videoSizeChagned = false;
+    private boolean surfaceSizeChanged = false;
 
     public VideoTextureRenderer(Context context, SurfaceTexture texture, int width, int height)
     {
@@ -162,6 +163,7 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
             if (frameAvailable)
             {
                 videoTexture.updateTexImage();
+
                 videoTexture.getTransformMatrix(videoTextureTransform);
                 frameAvailable = false;
             }
@@ -176,17 +178,17 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
         GLES20.glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT);
 
+
         // Draw texture
         GLES20.glUseProgram(shaderProgram);
         int textureParamHandle = GLES20.glGetUniformLocation(shaderProgram, "texture");
         int textureCoordinateHandle = GLES20.glGetAttribLocation(shaderProgram, "vTexCoordinate");
         int positionHandle = GLES20.glGetAttribLocation(shaderProgram, "vPosition");
         int textureTranformHandle = GLES20.glGetUniformLocation(shaderProgram, "textureTransform");
-        if(gravityChanged || videoSizeChagned){
-            resolveScale(videoWidth,videoHeight,width,height,gravity);
-            gravityChanged = false;
-            videoSizeChagned = false;
-        }
+
+        //adjust display aspect.
+        resolveScale(videoWidth,videoHeight,surfaceWidth,surfaceHeight,gravity);
+
         //3D to 2D
         if(isCropRight) {
             resetVertexBuffer();
@@ -195,7 +197,7 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
         }
 
         for(int i = 0; i < screenNum; i++) {
-            GLES20.glViewport(i * width/screenNum, 0, width/screenNum, height);
+            GLES20.glViewport(i * surfaceWidth/screenNum, 0, surfaceWidth/screenNum, surfaceHeight);
             GLES20.glEnableVertexAttribArray(positionHandle);
 
             GLES20.glVertexAttribPointer(positionHandle, 3, GLES20.GL_FLOAT, false, 4 * 3, vertexBuffer);
@@ -242,6 +244,12 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
         this.videoHeight = height;
         videoSizeChagned = true;
     }
+    public void setSurfaceSize(int surfaceWidth, int surfaceHeight)
+    {
+        this.surfaceWidth = surfaceWidth;
+        this.surfaceHeight = surfaceHeight;
+        surfaceSizeChanged = true;
+    }
 
     public void checkGlError(String op)
     {
@@ -259,9 +267,11 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
     @Override
     public void onFrameAvailable(SurfaceTexture surfaceTexture)
     {
+
         synchronized (this)
         {
             frameAvailable = true;
+
         }
     }
 
@@ -363,6 +373,7 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
     }
     private void resolveScale(int videoWidth, int videoHeight, int surfaceWidth, int surfaceHeight, GravityMode gravity)
     {
+            surfaceWidth = surfaceWidth / screenNum;
             switch(gravity){
 
                 case GRAVITY_RESIZE:                                      //normal stretch 变形
@@ -378,7 +389,8 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
             }
         float videoAspect = videoWidth / (float) videoHeight;
         float surfaceAspect = surfaceWidth / (float) surfaceHeight;
-
+        //Log.i(TAG, "resolveScale: wideoWidth: " + videoWidth + " videoHeight: " + videoHeight + " surfaceWidth: " + surfaceWidth + " surfaceHeight: " + surfaceHeight);
+       // Log.i(TAG, "resolveScale:  videoAspect: " + videoAspect + " surfaceAspect: "+ surfaceAspect);
         float width = videoWidth;
         float height = videoHeight;
 
@@ -387,6 +399,7 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
         float dd = 1.0f;
         float nW = 1.0f;
         float nH = 1.0f;
+
         switch(gravity){
             case GRAVITY_RESIZE_ASPECT_FILL:
                 dd = dW > dH ? dW:dH;
@@ -398,6 +411,7 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
 
         nW = (width * dd ) / (float)surfaceWidth;
         nH = (height * dd ) / (float)surfaceHeight;
+        //Log.i(TAG, "resolveScale: dw: " + dW + " dH: "+ dH + "nW: "+ nW +" nH: " +nH);
         squareCoords[0] = - nW;
         squareCoords[1] =  nH;
         squareCoords[2] =  0.0f;

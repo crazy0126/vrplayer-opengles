@@ -22,20 +22,20 @@ public abstract class TextureBaseRenderer implements Runnable
     private EGLContext eglContext;
     private EGLSurface eglSurface;
 
-    protected int width;
-    protected int height;
+    protected int surfaceWidth;
+    protected int surfaceHeight;
     private boolean running;
 
     /**
      * @param texture Surface texture on which to render. This has to be called AFTER the texture became available
-     * @param width Width of the passed surface
-     * @param height Height of the passed surface
+     * @param surfaceWidth Width of the passed surface
+     * @param surfaceHeight Height of the passed surface
      */
-    public TextureBaseRenderer(SurfaceTexture texture, int width, int height)
+    public TextureBaseRenderer(SurfaceTexture texture, int surfaceWidth, int surfaceHeight)
     {
         this.texture = texture;
-        this.width = width;
-        this.height = height;
+        this.surfaceWidth = surfaceWidth;
+        this.surfaceHeight = surfaceHeight;
         this.running = true;
         Thread thrd = new Thread(this);
         thrd.start();
@@ -100,7 +100,7 @@ public abstract class TextureBaseRenderer implements Runnable
 
         if (System.currentTimeMillis() - lastFpsOutput > 1000)
         {
-            Log.d(TAG, "FPS: " + frames);
+           // Log.d(TAG, "FPS: " + frames);
             lastFpsOutput = System.currentTimeMillis();
             frames = 0;
         }
