@@ -84,6 +84,8 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
         super(texture, width, height);
         this.ctx = context;
         videoTextureTransform = new float[16];
+        setupVertexBuffer();
+        setupTexture(ctx);
     }
 
     private void loadShaders()
@@ -224,8 +226,7 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
     @Override
     protected void initGLComponents()
     {
-        setupVertexBuffer();
-        setupTexture(ctx);
+
         loadShaders();
     }
 
