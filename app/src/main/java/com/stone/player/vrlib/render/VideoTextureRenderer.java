@@ -193,7 +193,7 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
 
         //3D to 2D
         if(isCropRight) {
-            resetVertexBuffer();
+            resetTextureBuffer();
             setCropRight();
             isCropRight = false;
         }
@@ -392,7 +392,7 @@ public class VideoTextureRenderer extends TextureBaseRenderer implements Surface
         float surfaceAspect = surfaceWidth / (float) surfaceHeight;
         //Log.i(TAG, "resolveScale: wideoWidth: " + videoWidth + " videoHeight: " + videoHeight + " surfaceWidth: " + surfaceWidth + " surfaceHeight: " + surfaceHeight);
        // Log.i(TAG, "resolveScale:  videoAspect: " + videoAspect + " surfaceAspect: "+ surfaceAspect);
-        float width = videoWidth;
+        float width = videoWidth *((float)1.0 - crop_right);
         float height = videoHeight;
 
         float dW = (float)surfaceWidth / width;
